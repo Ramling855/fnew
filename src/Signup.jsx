@@ -27,7 +27,7 @@ const configAxios={
 
 
     axios
-      .post("http://localhost:7000/form/postall",formData,configAxios )
+      .post("https://thawing-reef-81365.herokuapp.com/form/postall",formData,configAxios )
       .then(() => console.log("data posted"))
       .catch(() => {
         console.log("errr");

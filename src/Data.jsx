@@ -7,7 +7,7 @@ const Data = () => {
 //   const [start, setStart] = useState();
   useEffect(() => {
     axios
-      .get("http://localhost:7000/form/getall")
+      .get("https://thawing-reef-81365.herokuapp.com/form/getall")
       .then((all) => setGetdata(all.data.data))
       .catch(() => console.log("errr"));
   });
@@ -15,7 +15,7 @@ const Data = () => {
   const click = (ele) => {
     console.log(ele);
     axios
-      .delete(`http://localhost:7000/form/deleteall/${ele._id}`)
+      .delete(`https://thawing-reef-81365.herokuapp.com/form/deletall/${ele._id}`)
       .then((all) => console.log("datadelete"))
       .catch(() => console.log("errr"));
   };
