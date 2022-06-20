@@ -15,16 +15,16 @@ export default function App() {
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><Link to="Data">
+    <Link to="Data">
           <button>home</button>
-        </Link></a>
-        <Link to="signup">
-          <button>Add data</button>
         </Link>
+        
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown"><Link to="signup">
+          <button>Add data</button>
+        </Link>
       <ul class="navbar-nav">
       
       </ul>
