@@ -12,13 +12,7 @@ const Data = () => {
       .catch(() => console.log("errr"));
   });
 
-  const click = (ele) => {
-    console.log(ele);
-    axios
-      .delete(`https://thawing-reef-81365.herokuapp.com/form/deletall/${ele._id}`)
-      .then((all) => console.log("datadelete"))
-      .catch(() => console.log("errr"));
-  };
+  
 
   return (
     <>
@@ -26,7 +20,7 @@ const Data = () => {
             return (
               <>
 
-<div key={i} class="card mb-3" style={{width: "100%",height:"500px"}}>
+<div key={i} class="card mb-3" style={{width: "100%",height:"1000px"}}>
   <div className="row g-0">
     <div className="col-md-4">
       <img src={ele.photo} className="img-fluid rounded-start" alt="..."/>
@@ -46,7 +40,7 @@ const Data = () => {
       </div>
     </div>
   </div>
-  <button style={{width:"10%"}} type="button" class="btn btn-danger" onClick={()=>click(ele)}>Remove</button>
+  
 </div>
 
               </>
